@@ -1,0 +1,6 @@
+4
+Bernie 100
+Hillary 50
+Donald 75
+Ted 25
+12

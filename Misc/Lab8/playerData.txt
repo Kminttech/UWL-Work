@@ -1,0 +1,56 @@
+5	Ed Williams	WR	25	6-2	195	1	Fort Hays State
+7	Brett Hundley	QB	22	6-3	226	2	UCLA
+8	Tim Masthay	P	29	6-1	200	7	Kentucky
+12	Aaron Rodgers	QB	32	6-2	225	12	California
+17	Davante Adams	WR	23	6-1	215	3	Fresno State
+18	Randall Cobb	WR	25	5-10	192	6	Kentucky
+21	Ha-Ha Clinton-Dix	FS	23	6-1	208	3	Alabama
+22	Aaron Ripkowski	FB	23	6-1	246	2	Oklahoma
+23	Damarious Randall	CB	23	5-11	196	2	Arizona State
+24	Quinten Rollins	CB	23	5-11	195	2	Miami (OH)
+27	Eddie Lacy	RB	25	5-11	234	4	Alabama
+31	Robertson Daniel	CB	24	6-1	210	1	BYU
+33	Micah Hyde	FS	25	6-0	197	4	Iowa
+34	Ryan Williams	QB	--	6-6	222	R	Miami
+36	LaDarius Gunter	CB	23	6-2	201	2	Miami
+37	Sam Shields	CB	28	5-11	184	7	Miami
+38	John Crockett	RB	24	6-0	217	1	North Dakota State
+39	Demetri Goodson	CB	26	5-11	197	3	Baylor
+42	Morgan Burnett	SS	27	6-1	209	7	Georgia Tech
+44	James Starks	RB	30	6-2	218	7	Buffalo
+47	Jake Ryan	LB	24	6-2	240	2	Michigan
+48	Joe Thomas	LB	24	6-1	227	2	South Carolina State
+50	Vince Kowalski	OT	23	6-4	305	R	Villanova
+52	Clay Matthews	LB	29	6-3	255	8	USC
+53	Nick Perry	LB	26	6-3	265	5	USC
+54	Carl Bradford	LB	23	6-1	245	2	Arizona State
+55	Andy Mulumba	LB	26	6-3	260	4	Eastern Michigan
+56	Julius Peppers	LB	36	6-7	287	15	North Carolina
+58	Sam Barrington	LB	25	6-1	240	4	South Florida
+59	Rick Lovato	LS	23	6-2	235	1	Old Dominion
+60	Jeremy Vujnovich	OT	25	6-5	300	1	Louisiana College
+62	William Campbell	DT	24	6-4	311	2	Michigan
+63	Corey Linsley	C	24	6-3	301	3	Ohio State
+64	Mike Pennel	DT	24	6-4	332	3	Colorado State-Pueblo
+69	David Bakhtiari	OT	24	6-4	310	4	Colorado
+70	T.J. Lang	OG	28	6-4	318	8	Eastern Michigan
+71	Josh Sitton	OG	29	6-3	318	9	UCF
+73	JC Tretter	OT	25	6-4	307	4	Cornell
+74	Matt Rotheram	G	23	6-5	325	1	Pittsburgh
+75	Bryan Bulaga	OT	27	6-5	314	7	Iowa
+76	Mike Daniels	DE	26	6-0	310	5	Iowa
+77	B.J. McBryde	DE	24	6-5	304	2	Connecticut
+79	Josh Walker	OG	24	6-5	328	2	Middle Tennessee
+80	Justin Perillo	TE	25	6-3	250	3	Maine
+82	Richard Rodgers	TE	24	6-4	257	3	California
+83	Jeff Janis	WR	24	6-3	219	3	Saginaw Valley
+84	Jared Abbrederis	WR	25	6-1	195	3	Wisconsin
+85	Jamel Johnson	WR	24	6-2	227	1	Alabama State
+86	Kennard Backman	TE	23	6-3	245	2	UAB
+87	Jordy Nelson	WR	30	6-3	217	9	Kansas State
+88	Ty Montgomery	WR	23	6-0	216	2	Stanford
+91	Jayrone Elliott	LB	24	6-3	255	3	Toledo
+93	Josh Boyd	DT	26	6-3	310	4	Mississippi State
+95	Datone Jones	DE	25	6-4	285	4	UCLA
+97	Christian Ringo	DT	24	6-1	298	1	Louisiana Lafayette
+98	Letroy Guion	DT	28	6-4	322	9	Florida State

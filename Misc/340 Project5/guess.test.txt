@@ -1,0 +1,30 @@
+6
+add 1
+add 2
+add 3
+rem 1
+rem 2
+rem 3
+6
+add 1
+add 2
+add 3
+rem 3
+rem 2
+rem 1
+2 
+add 1
+rem 2
+4
+add 2
+add 1
+rem 1
+rem 2
+7
+add 2
+add 5
+add 1
+add 3
+rem 5
+add 4
+rem 4

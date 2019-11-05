@@ -1,0 +1,132 @@
+Please enter a training set size (a positive multiple of 250 that is <= 1000):1000
+Please enter a training increment (either 10, 25, or 50):50
+
+Loading Property Information from file.
+Loading Data from database.
+
+Collecting set of 1000 training examples.
+
+Running with 50 examples in training set.
+
+Given current tree, there are 4252 correct classifications
+out of 4644 possible (a success rate of 91.559001 percent).
+
+Running with 100 examples in training set.
+
+Given current tree, there are 4605 correct classifications
+out of 4644 possible (a success rate of 99.160207 percent).
+
+Running with 150 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 200 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 250 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 300 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 350 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 400 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 450 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 500 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 550 examples in training set.
+
+Given current tree, there are 4634 correct classifications
+out of 4644 possible (a success rate of 99.784668 percent).
+
+Running with 600 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 650 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 700 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 750 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 800 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 850 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 900 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 950 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+Running with 1000 examples in training set.
+
+Given current tree, there are 4628 correct classifications
+out of 4644 possible (a success rate of 99.655469 percent).
+
+	----------
+	Statistics
+	----------
+
+Training set size: 50.  Success:  91.559001 percent.
+Training set size: 100.  Success:  99.160207 percent.
+Training set size: 150.  Success:  99.784668 percent.
+Training set size: 200.  Success:  99.784668 percent.
+Training set size: 250.  Success:  99.784668 percent.
+Training set size: 300.  Success:  99.784668 percent.
+Training set size: 350.  Success:  99.784668 percent.
+Training set size: 400.  Success:  99.784668 percent.
+Training set size: 450.  Success:  99.784668 percent.
+Training set size: 500.  Success:  99.784668 percent.
+Training set size: 550.  Success:  99.784668 percent.
+Training set size: 600.  Success:  99.655469 percent.
+Training set size: 650.  Success:  99.655469 percent.
+Training set size: 700.  Success:  99.655469 percent.
+Training set size: 750.  Success:  99.655469 percent.
+Training set size: 800.  Success:  99.655469 percent.
+Training set size: 850.  Success:  99.655469 percent.
+Training set size: 900.  Success:  99.655469 percent.
+Training set size: 950.  Success:  99.655469 percent.
+Training set size: 1000.  Success:  99.655469 percent.

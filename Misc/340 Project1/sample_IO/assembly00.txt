@@ -1,0 +1,4 @@
+INC A
+JIG A B 2
+INC B
+INC A

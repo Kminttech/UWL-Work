@@ -1,0 +1,27 @@
+Loading file "sprinklers.txt"
+
+WetGrass | Rain = T 
+P(T) = 0.048, P(F) = 0.952
+
+WetGrass | Rain = F
+P(T) = 0.262, P(F) = 0.738
+
+WetGrass | Cloudy = T
+P(T) = 0.154, P(F) = 0.846
+
+WetGrass | Cloudy = F
+P(T) = 0.156, P(F) = 0.844
+
+Cloudy | WetGrass = T
+P(T) = 0.497, P(F) = 0.503
+
+Cloudy | WetGrass = F
+P(T) = 0.501, P(F) = 0.499
+
+WetGrass | Cloudy = F, Rain = T
+P(T) = 0.019, P(F) = 0.981
+
+WetGrass | Cloudy = F, Rain = T, Sprinkler = T
+P(T) = 0.01, P(F) = 0.99
+
+quit

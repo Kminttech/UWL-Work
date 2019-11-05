@@ -1,0 +1,20 @@
+--------------------------
+  Output for file: wordPuzzle00.txt
+--------------------------
+
+"aunt" was found at row 0, column 3, going DL.
+"bob" was found at row 0, column 0, going R.
+"cat" was found at row 3, column 2, going L.
+
+--------------------------
+  Output for file: wordPuzzle01.txt
+--------------------------
+
+"turtle" was found at row 0, column 0, going R.
+"dove" was found at row 3, column 3, going L.
+"pet" was not found.
+"packers" was not found.
+"water" was found at row 1, column 0, going R.
+"fee" was found at row 2, column 3, going DR.
+"stlouisrams" was not found.
+"eeeeee" was not found.

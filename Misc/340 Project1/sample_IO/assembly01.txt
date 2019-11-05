@@ -1,0 +1,6 @@
+INC A
+SET B 10
+ADD A 2
+JIG B A -1
+INC A
+JIG A B -6
