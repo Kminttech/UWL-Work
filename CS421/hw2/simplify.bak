@@ -1,0 +1,6 @@
+#lang racket
+
+(define (simplify ex)
+  '())
+
+(provide simplify)

@@ -1,0 +1,25 @@
+#lang racket
+
+(define (heap-create)
+  '())
+
+(define (heap-is-empty? h)
+  '())
+
+(define (heap-size h)
+  '())
+
+(define (heap-insert h f x)
+  '())
+
+(define (heap-peek h)
+  '())
+
+(define (heap-contains h eq x)
+  '())
+
+(define (list->heap xs f)
+  '())
+
+(provide heap-create heap-is-empty? heap-size heap-insert heap-peek heap-contains list->heap)
+

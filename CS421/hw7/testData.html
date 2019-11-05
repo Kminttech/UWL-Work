@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Test Results</h2>
+<p>CPU: Intel I5-6600K, 4 Cores</p>
+<p>More threads gets diminishing returns until it actually becomes detrimental to have more.</p>
+<table class="centered" style="width:60%;margin:auto;float:none">
+  <tr style="background-color: #eee;width:100%">
+    <th>SRC</th>
+    <th>M</th>
+    <th>N</th>
+    <th>Tile<sub>W</sub></th>
+    <th>Tile<sub>H</sub></th>
+    <th>Time (ms)</th>
+    <th>Cell Count/Thread</th>
+  </tr><tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>420</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>205</td>     <td>1354977 1360023 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>130</td>     <td>666825 705387 623115 719673 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>111</td>     <td>256293 446865 358506 212118 295773 258657 441972 444816 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>108</td>     <td>213957 220605 222729 6147 9573 590799 223059 13368 1440 216 71244 234948 222192 228936 224118 231669 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>104</td>     <td>129762 302556 440358 0 229596 230760 0 60096 0 58458 226935 141156 59367 124623 0 74604 0 0 0 0 0 0 0 0 0 0 0 0 0 0 274776 361953 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>124</td>     <td>11652 8859 33075 227805 224007 35628 0 57852 0 118362 7614 99 0 92559 27558 495 1134 0 230523 47925 58752 21249 221487 230214 232242 231162 8808 234426 139803 51999 38517 14907 7731 22242 14697 11670 20301 6918 162 2997 11301 0 8268 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>327</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>177</td>     <td>1355520 1359480 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>92</td>     <td>689344 683936 665152 676568 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>94</td>     <td>460800 425408 262112 265824 260800 436120 341184 262752 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>89</td>     <td>404864 256 390944 397816 25376 25600 260032 24352 264928 257856 263872 399104 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>93</td>     <td>421888 357408 82144 512 512 261632 259072 266144 262272 436472 366944 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>102</td>     <td>514816 522112 529152 0 90560 75008 0 93056 521568 98144 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 63232 0 0 71200 71768 64384 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>320</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>164</td>     <td>1355128 1359872 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>87</td>     <td>692480 673848 660544 688128 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>92</td>     <td>420088 261952 268544 415808 428800 266944 383744 269120 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>87</td>     <td>153408 263424 154488 140544 261952 262528 264576 265920 24832 269120 387712 266496 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>90</td>     <td>137216 162176 187392 263424 260928 263168 355192 266752 281408 269120 268224 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>91</td>     <td>265024 267520 264320 0 220416 176512 174016 177592 176640 0 240448 244544 242816 265152 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>327</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>166</td>     <td>1361920 1353080 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>85</td>     <td>677120 676608 682360 678912 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>88</td>     <td>428408 477696 333696 267392 272000 270848 266240 398720 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>92</td>     <td>267392 267392 265600 270848 271488 224384 272640 15488 153976 154112 141568 266752 143360 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>93</td>     <td>87160 81920 168192 0 0 117248 266368 219392 248064 271488 266240 263296 269696 272000 183936 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>94</td>     <td>231680 273792 228736 352512 273792 268544 271488 196224 195072 4096 195576 223488 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>10367</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>5273</td>     <td>1358418 1356582 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>2737</td>     <td>678123 675474 685533 675870 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>2720</td>     <td>345438 335613 339123 336786 336450 339429 337497 344664 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>2718</td>     <td>182445 178932 198090 186978 175557 174240 162426 170514 173427 171927 154413 149052 157167 153888 154890 171054 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>2722</td>     <td>91707 79023 77016 106032 43257 65352 79770 55833 85116 125253 72696 47235 93054 67626 62136 83115 111315 90474 73122 112599 148350 90438 58182 69924 50223 44532 88965 82932 155916 129351 68667 105789 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>2757</td>     <td>56334 40857 51975 37788 44292 64881 20724 73170 30621 34338 34299 40935 70743 61722 68757 50496 39327 27621 44586 34575 42486 55497 55794 113322 19581 24582 26313 37839 44277 34500 47841 26148 59826 32373 42969 56034 28377 47481 50013 24294 27996 48477 25755 47970 35886 56331 31689 18360 80871 16644 48990 24786 11766 22638 15753 37257 33240 80679 41796 26784 47361 26796 65883 43704 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>10239</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>5243</td>     <td>1357280 1357720 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>2697</td>     <td>679744 678840 675488 680928 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>2754</td>     <td>339552 330712 332256 347200 340768 335104 340064 349344 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>2703</td>     <td>170624 168576 178456 148288 154496 168864 179392 163264 164160 167488 167616 181696 168928 161920 186336 184896 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>2714</td>     <td>85120 56096 98584 49408 93760 109408 112288 86080 87904 63488 56896 63040 67904 57184 94464 92736 67392 102688 64064 95552 115584 69920 71776 79456 106144 108896 98656 75136 82496 101504 111456 89920 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>2694</td>     <td>59680 40320 58112 38144 25376 32032 30496 45664 50272 83168 31232 43584 19488 38496 39424 45376 30976 41248 56896 73888 36192 56320 54368 23584 23552 27424 30496 33312 49440 32000 22272 39488 28960 28192 16928 27168 22528 58048 89184 55840 48768 17920 55872 36128 40736 70744 42496 47680 30848 52032 48992 32032 61472 65088 36352 47168 33600 16640 39968 31264 36672 89184 55744 38432 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>10284</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>5232</td>     <td>1357752 1357248 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>2701</td>     <td>676160 677112 679936 681792 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>2696</td>     <td>338880 342592 335040 335288 342528 334720 345216 340736 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>2702</td>     <td>185472 170112 166784 162304 170432 161024 186496 144640 143608 190144 170112 182080 171456 169728 151040 189568 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>2702</td>     <td>101952 86144 50752 75840 90816 69760 62016 111744 101568 86080 80000 82496 80576 92288 113920 91840 53824 70976 49728 75328 67704 72384 127552 119360 52352 78976 108096 90688 74240 99584 90240 106176 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>2699</td>     <td>31744 35840 38464 21504 39680 38976 29248 44032 93888 51264 39680 32896 24128 49728 39936 55872 29696 80000 36864 31744 36992 21504 94336 16384 45184 72896 34368 50176 42040 60096 57344 19456 25600 39040 26624 50752 21504 25600 61568 40960 60416 34368 34816 40960 24576 46208 24576 37888 30720 63616 40512 27648 63232 41984 65664 56320 61184 31744 64064 32768 22528 70784 25600 25216 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>10280</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>5230</td>     <td>1356672 1358328 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>2722</td>     <td>675328 682360 675456 681856 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>2725</td>     <td>336512 337152 329976 342400 345344 337664 341760 344192 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>2697</td>     <td>206080 170752 142336 164992 170368 177272 169088 160896 198400 135808 200704 152320 167296 162816 156288 179584 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>2707</td>     <td>105984 61440 65536 96512 90752 40960 78976 68096 123392 111744 110592 110592 80128 84224 81920 91264 78592 36864 57344 102400 73728 78976 86656 145280 89600 70784 70784 65536 92416 76800 100608 86520 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>2696</td>     <td>19968 61440 11136 24576 33920 78976 69632 27648 12288 34048 53248 28672 20480 70784 25728 87168 40960 20480 25728 32768 36864 51456 40960 36864 32768 49152 16384 77824 53248 74880 111104 50304 50304 40960 38016 28672 64000 16384 85496 29824 49152 24576 40960 49152 38016 78976 19968 15872 25728 24576 20480 49152 32768 69632 28672 40960 24576 28672 44032 28672 16384 51456 118784 28672 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>47408</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>24280</td>     <td>1358049 1356951 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>12576</td>     <td>679269 678612 677898 679221 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>12542</td>     <td>339804 341382 337572 338100 338862 340881 337806 340593 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>12571</td>     <td>172146 150138 160437 178533 176856 163374 152364 152373 168483 190545 181239 165057 179097 161829 184944 177585 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>12582</td>     <td>82737 88863 99516 88713 78210 88308 73764 74304 81315 81444 87954 84633 84819 93903 76278 106923 59673 88869 91413 92751 79125 96126 99990 84123 106986 83055 100635 84141 68025 78066 71253 59085 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>13389</td>     <td>41967 39210 42354 51459 51324 43452 41637 43104 50343 40881 47121 41316 39192 43038 39849 40377 40284 45672 37731 41910 48447 37749 36492 42285 39999 38232 34467 51213 39171 39837 41058 36078 44586 37188 45081 40293 40605 39192 37860 34698 46437 41937 42027 47433 51681 43176 47874 44886 38532 36678 43680 36582 44562 43959 56109 37914 46053 44868 39954 41637 47004 40863 42531 41871 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>47439</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>24195</td>     <td>1357472 1357528 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>12470</td>     <td>676672 680408 679648 678272 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>12467</td>     <td>336064 339328 339064 340640 343136 334976 339552 342240 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>12477</td>     <td>168120 153696 169824 167136 177952 177632 176896 180992 169344 176384 171616 164800 154528 158816 174976 172288 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>12481</td>     <td>89760 83328 82528 76640 89280 74656 64256 85728 102880 92448 84672 95808 93376 88352 58880 75424 85216 64256 86016 88960 70976 69016 102304 75712 96928 94400 112736 73824 102976 73536 80704 99424 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>12524</td>     <td>27904 49184 37408 36800 42816 46592 42496 24800 59968 35936 38176 36768 61536 52800 29944 50496 27552 37376 41568 35104 51808 28928 34144 57632 49760 40480 44352 34848 35360 47904 35872 38176 32032 44128 73632 39360 40512 48448 51616 45344 45632 51008 27648 36448 28160 49216 52992 39968 49184 33280 40000 32032 49152 45408 28960 36640 39712 40160 71232 61504 56672 43072 27648 39712 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>47620</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>24289</td>     <td>1356672 1358328 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>12521</td>     <td>681536 675136 675136 683192 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>12509</td>     <td>336256 340280 341056 341696 338304 341440 338112 337856 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>12606</td>     <td>169152 175424 160192 170432 175040 174272 170176 164160 169600 166400 169024 165888 176000 171200 166208 171832 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>12532</td>     <td>92928 93504 92032 77824 69184 89408 91456 96448 89856 98176 99648 84160 78592 76672 81344 72256 74752 77696 87808 77824 87168 66304 77952 87360 87360 86592 85760 93248 80896 87416 87616 85760 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>12556</td>     <td>36416 42112 55616 47104 44032 28224 49280 41536 46080 50112 45632 28672 33984 47872 31616 46976 36544 46528 38912 38392 30720 58944 57920 53248 56896 40512 33792 33792 49280 61120 37504 48128 25600 50688 59776 34816 48128 32768 37888 32320 36416 20480 49856 34240 61184 47744 32640 48704 45632 36416 46976 55296 39936 46976 40256 52800 34816 45056 33344 48128 43136 28672 34944 31872 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>47782</td>     <td>2715000 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>24244</td>     <td>1353720 1361280 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>12499</td>     <td>678912 678912 680568 676608 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>12528</td>     <td>343040 333056 344192 339456 337664 337664 339456 340472 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>12492</td>     <td>170880 164992 169728 172672 169728 173824 168576 176768 164480 171520 170880 165632 166272 170880 171384 166784 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>12525</td>     <td>50944 69120 79616 88320 86016 106496 95488 91904 70784 82048 55040 101248 102400 57344 79616 94208 63232 73728 84224 106496 81272 71424 83072 89472 88320 89600 105856 91904 106496 103680 68992 96640 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test1.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>12512</td>     <td>45056 57344 50304 36864 36864 49152 57344 36864 38144 45056 44544 37504 77824 40960 42752 43264 49152 16888 39808 40448 22272 34560 57344 34560 39808 53248 42112 40960 49152 28672 36864 38016 36864 32768 28672 38016 28672 36864 40960 20480 38016 45056 38016 54400 45056 50944 38016 58496 55040 63744 62592 20480 48640 28672 40448 42112 42112 20480 46208 44544 52224 50304 45056 57344 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>51</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>31</td>     <td>202344 201456 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>18</td>     <td>110310 110736 105882 76872 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>20</td>     <td>117678 243 125400 29205 119283 6192 0 5799 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>17</td>     <td>100653 99846 101382 0 101919 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>20</td>     <td>106008 7467 0 0 0 0 0 0 0 99594 171 0 83169 6678 100713 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>3</td>    <td>25</td>     <td>36933 102996 35919 66309 0 64992 0 0 0 0 0 0 0 96651 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>55</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>26</td>     <td>199496 204304 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>13</td>     <td>103504 95112 102400 102784 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>16</td>     <td>71968 103696 2048 2320 97224 9232 35088 82224 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>18</td>     <td>41056 28944 40800 0 0 72152 0 71584 29984 2816 76256 0 0 40208 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>17</td>     <td>62592 41264 62864 39712 59152 41664 33496 256 528 256 0 256 61760 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>16</td>    <td>16</td>    <td>21</td>     <td>83328 25616 82768 0 0 84096 24248 25520 256 256 0 256 0 256 0 77200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>50</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>26</td>     <td>204288 199512 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>15</td>     <td>111488 109496 78400 104416 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>15</td>     <td>17440 17408 0 81824 85888 84888 17440 98912 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>15</td>     <td>30752 30784 30752 0 0 0 0 71296 70520 68640 71328 29728 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>16</td>     <td>103328 40992 43072 0 0 0 0 0 61056 57144 59232 38976 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>32</td>    <td>32</td>    <td>21</td>     <td>53344 101312 102208 0 0 0 51808 0 44096 51032 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>50</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>27</td>     <td>201240 202560 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>19</td>     <td>109696 103616 81240 109248 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>15</td>     <td>73728 73856 73728 26624 29312 27648 69888 29016 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>15</td>     <td>69760 71744 0 67648 0 0 0 0 0 0 29184 33280 99520 32664 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>18</td>     <td>69760 69632 65792 0 0 0 0 0 0 0 39488 40728 40064 78336 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>3</td>    <td>3</td>    <td>64</td>    <td>64</td>    <td>20</td>     <td>99864 105472 105152 93312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>1537</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>782</td>     <td>201864 201936 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>408</td>     <td>102216 98889 101280 101415 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>407</td>     <td>51573 53145 49044 49686 49575 48771 51963 50043 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>404</td>     <td>28992 37698 28443 33057 20061 33297 25428 18570 23106 25350 10845 25728 19341 19590 28668 25626 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>406</td>     <td>16470 25437 25056 18699 16692 3915 8067 7740 7815 7929 3879 5343 12201 7674 21330 7803 11295 15630 15522 13116 7824 6126 15687 16854 17730 16881 2271 2913 17049 16233 16335 16284 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>3</td>    <td>3</td>    <td>409</td>     <td>19434 7710 7716 16023 1494 1503 27393 1773 1470 7992 1503 1509 1476 9030 19074 117 63 81 9444 9315 9756 9723 9915 1581 9894 1605 0 1038 1035 0 0 0 1875 0 2106 0 0 0 0 0 15624 7737 2517 0 10215 5082 7662 7821 7755 7824 4800 0 5538 2895 15549 8811 9708 32910 1782 25734 8484 7632 7575 7497 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>1532</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>785</td>     <td>202136 201664 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>409</td>     <td>98704 98936 103232 102928 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>402</td>     <td>49488 53200 49984 49208 50752 50496 51168 49504 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>404</td>     <td>31792 28224 27440 33072 20256 27168 19216 26912 17168 20240 31688 15120 24880 27712 24480 28432 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>406</td>     <td>11024 7712 31232 16912 23072 17176 1808 1280 12048 26144 2832 2560 17984 1280 3328 19216 10000 11536 18704 1536 23344 18976 7936 4624 2832 9472 56400 9488 9248 3840 17424 2832 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>16</td>    <td>16</td>    <td>403</td>     <td>7696 12288 23856 15392 11024 7696 0 0 0 0 0 0 0 0 0 0 0 0 17320 1280 9472 17312 1280 8480 8448 8480 8448 1536 8464 8720 2832 8192 8208 15616 8224 1792 1792 3584 17168 14880 17936 1792 1792 7936 3584 7680 7952 7952 1792 7696 1808 3840 7952 7680 7952 512 2064 7952 4608 7968 7952 7936 7936 2048 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>1534</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>784</td>     <td>201536 202264 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>401</td>     <td>101240 101248 102368 98944 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>403</td>     <td>45920 51328 54016 58432 50528 41984 43608 57984 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>408</td>     <td>33888 24672 33792 33824 13144 24608 23296 32768 16928 18432 23552 19552 27680 18464 30496 28704 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>411</td>     <td>8192 10240 8224 8192 19456 8224 8192 7200 7936 15392 18688 14336 15424 2048 10240 16384 27424 17440 14368 15424 7168 8960 12288 14624 9216 26688 23584 20536 3072 4128 15392 5120 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>32</td>    <td>32</td>    <td>405</td>     <td>15424 0 15360 15360 8192 16416 0 0 0 0 0 0 0 0 768 0 0 0 0 0 0 0 0 0 0 0 0 0 4096 9216 10240 6912 0 18688 9536 0 8192 8192 8192 7168 8224 17408 10240 17440 8000 12320 27968 27704 0 8192 6144 6144 8192 8992 8192 8224 5120 8224 6144 6176 8192 8192 8192 8224 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>1534</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>784</td>     <td>202560 201240 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>402</td>     <td>101504 101184 101720 99392 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>406</td>     <td>43072 64064 55256 54784 43072 51200 40960 51392 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>412</td>     <td>22016 32768 24576 18496 20480 23552 28800 31296 20480 16384 14400 28800 34880 26456 26112 34304 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>408</td>     <td>16384 18496 16384 16384 8192 12288 12288 8192 8192 8192 10304 18496 8192 18496 12288 12288 16384 16384 18496 20480 8192 4096 4096 8192 14400 17024 15360 8192 15360 8192 6208 17688 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>13</td>    <td>13</td>    <td>64</td>    <td>64</td>    <td>405</td>     <td>8192 8192 8192 8192 0 0 0 0 0 0 0 0 0 6208 0 0 15360 12288 4096 13824 10304 4096 16152 4096 8192 9728 8192 5632 7168 8320 4096 13824 8192 8192 0 2112 4096 16384 8192 4096 8192 4096 8192 10304 4096 8192 4096 8192 8192 2112 8192 4096 4096 12288 8192 4096 10304 4096 10304 8192 4096 8192 8192 8192 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>6209</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>3182</td>     <td>202128 201672 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>1646</td>     <td>100206 101652 101166 100776 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>1653</td>     <td>51081 50979 51786 50376 50253 50178 48870 50277 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>1645</td>     <td>27978 23043 23478 29112 32925 28278 29148 24696 19398 23829 22653 22827 21909 25212 27633 21681 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>1649</td>     <td>16368 16071 15051 15315 17982 11154 10149 9657 12543 14934 12819 14568 13401 11421 14118 12246 11160 12057 15237 10449 7257 11946 18357 10191 11856 10176 9207 12885 9102 10335 14205 11583 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>3</td>    <td>3</td>    <td>1652</td>     <td>6690 10290 7143 3123 2574 3114 5199 4998 4065 25119 4116 10248 11577 3618 6351 3513 3444 7629 7380 5994 8370 5211 3240 3396 4737 4836 3477 6546 6111 4275 12636 5928 3081 2901 6537 3738 1443 7890 6459 864 5016 20184 1110 6252 4716 7830 3669 7911 2592 2679 3654 8586 8751 10365 6459 5043 13308 11106 8088 5784 5802 2859 8445 5730 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>6204</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>3165</td>     <td>201632 202168 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>1645</td>     <td>102136 99600 102368 99696 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>1637</td>     <td>50224 51440 50416 52832 49728 48464 48688 52008 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>1646</td>     <td>27168 25400 22800 26512 27968 24976 25920 22832 26928 23072 25872 26304 22032 23632 26640 25744 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>1649</td>     <td>17920 8720 15360 25920 23840 15280 15120 12976 12032 1536 20400 9000 7168 14880 16896 7936 8976 10640 12816 8448 16944 6928 11296 10496 18960 1280 11808 13584 13840 16784 7040 8976 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>16</td>    <td>16</td>    <td>1643</td>     <td>14208 9216 7936 7680 2432 6144 13584 10016 11808 2064 2048 8080 6400 12592 10512 2304 2320 2304 5136 6432 8464 5120 2560 2048 2560 2560 2304 4864 6672 30768 14352 3072 10272 2304 2576 5648 5120 2304 2320 3072 1792 2064 3072 11656 1792 5120 2048 5376 5648 11808 8704 10240 10512 8192 4608 5664 6656 8720 7440 4352 5120 2304 4880 3856 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>6245</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>3183</td>     <td>201528 202272 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>1639</td>     <td>101248 100288 102048 100216 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>1654</td>     <td>50808 51264 51744 49472 52608 48800 49664 49440 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>1642</td>     <td>27680 25664 23552 24384 24096 23328 21504 28032 26680 25376 23584 21536 26624 24640 29440 27680 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>1652</td>     <td>18976 13600 9248 18432 12320 8192 14400 8992 10240 11008 14424 14336 11264 7968 16416 7200 11264 20512 9216 7936 11264 6144 5120 14336 8192 19520 11264 22784 15392 15424 10240 18176 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>32</td>    <td>32</td>    <td>1793</td>     <td>9728 11296 8448 14336 8192 6400 7232 5120 3072 4096 6176 3072 10240 3072 2048 2048 6144 8192 2048 5184 3072 3072 5120 16448 3072 3072 5152 3072 6144 4096 8192 6144 3072 4096 10272 2048 2080 2048 2048 2048 6144 1024 15392 1024 1024 9216 7168 11264 8704 8256 8192 9728 5152 7424 7168 5144 12288 4096 9248 8768 8192 5120 10240 13312 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>7012</td>     <td>403800 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>3183</td>     <td>201240 202560 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>1640</td>     <td>96792 103040 103040 100928 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>1664</td>     <td>47640 51776 57984 50688 49152 47168 48704 50688 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>1664</td>     <td>28672 24576 24128 31744 16384 24576 26688 33112 20480 24704 21568 27648 22592 19456 24704 32768 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>1652</td>     <td>8192 16384 9728 12288 16384 15360 16384 12288 12288 11392 7744 16384 8192 8192 20480 9728 12288 11264 12288 12288 14400 12288 12288 12288 6208 10304 12288 10304 22592 16384 16728 8192 </td>
+<tr style="background-color: #eee;width:100%">
+    <td>test2.bif</td>    <td>25</td>    <td>25</td>    <td>64</td>    <td>64</td>    <td>1658</td>     <td>4096 4096 4096 4096 4096 7168 5632 9728 8192 0 6208 12288 12288 6208 8192 12288 12288 12288 8192 8192 4096 6208 19456 8192 15936 4096 4096 4096 4096 6208 4096 4096 0 4096 0 0 4096 12288 7000 5632 0 0 0 10304 4096 7744 16384 9728 4096 4096 4096 4096 4096 4096 12288 4096 6208 4096 4096 12288 4096 8192 4096 4096 </td>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+#lang racket
+
+(define (simplify ex)
+  (cond ((list? ex) (cond ((equal? (car ex) '+) (addSim (cadr ex) (caddr ex)))
+                         ((equal? (car ex) '-) (subSim (cadr ex) (caddr ex)))
+                         ((equal? (car ex) '*) (multiSim (cadr ex) (caddr ex)))
+                         ((equal? (car ex) '/) (divSim (cadr ex) (caddr ex)))
+                         ((equal? (car ex) 'pick) (pickSim (cadr ex) (caddr ex) (cadddr ex)))
+                         (else ex)))
+        (else ex)))
+        
+
+(define (addSim op1 op2)
+  (let ((ops1 (simplify op1)) (ops2 (simplify op2)))
+    (cond ((or (equal? ops1 'error) (equal? ops2 'error)) 'error)
+          ((equal? ops1 0) ops2)
+          ((equal? ops2 0) ops1)
+          ((and (number? ops1) (number? ops2)) (+ ops1 ops2))
+          (else (cond ((number? op1) (list '+ ops2 ops1))
+                      ((and (symbol? op1) (symbol? ops2)) (cond ((symbol<? ops1 ops2) (list '+ ops2 ops1))
+                                                                (else (list '+ ops1 ops2))))
+                      (else (list '+ ops1 ops2)))))))
+
+(define (subSim op1 op2)
+  (let ((ops1 (simplify op1)) (ops2 (simplify op2)))
+    (cond ((or (equal? ops1 'error) (equal? ops2 'error)) 'error)
+          ((equal? ops2 0) ops1)
+          ((equal? ops1 ops2) 0)
+          ((and (number? ops1) (number? ops2)) (- ops1 ops2))
+          (else (list '- ops1 ops2)))))
+
+(define (multiSim op1 op2)
+  (let ((ops1 (simplify op1)) (ops2 (simplify op2)))
+    (cond ((or (equal? ops1 'error) (equal? ops2 'error)) 'error)
+          ((or (equal? ops1 0) (equal? ops2 0)) 0)
+          ((equal? ops1 1) ops2)
+          ((equal? ops2 1) ops1)
+          ((and (number? ops1) (number? ops2)) (* ops1 ops2))
+          (else (cond ((number? op1) (list '* ops2 ops1))
+                      ((and (symbol? op1) (symbol? ops2)) (cond ((symbol<? ops1 ops2) (list '* ops2 ops1))
+                                                                (else (list '* ops1 ops2))))
+                      (else (list '* ops1 ops2)))))))
+
+(define (divSim op1 op2)
+  (let ((ops1 (simplify op1)) (ops2 (simplify op2)))
+    (cond ((or (equal? ops1 'error) (equal? ops2 'error)) 'error)
+          ((equal? ops2 1) ops1)
+          ((equal? ops2 0) 'error)
+          ((equal? ops1 ops2) 1)
+          ((equal? ops1 0) 0)
+          ((and (number? ops1) (number? ops2)) (/ ops1 ops2))
+          (else (list '/ ops1 ops2)))))
+
+(define (pickSim op1 op2 op3)
+  (let ((ops1 (simplify op1)) (ops2 (simplify op2)) (ops3 (simplify op3)))
+    (cond ((equal? ops1 'error) 'error)
+          ((equal? ops1 0) ops2)
+          ((number? ops1) ops3)
+          (else (list 'pick ops1 ops2 ops3)))))
+
+(define (footprint ex)
+  (countUnique (simplify ex) '() #t))
+
+(define (countUnique ex l final?)
+  (cond ((null? ex) (if (final?) (* (length l) 4) (l)))
+        ((or (number? (car ex)) (or (equal? ex 'a) (equal? ex 'z) (and (symbol<? ex 'a) (symbol<? 'z ex)))) (countUnique (cdr ex) (if (contains? l (car ex)) l (cons l (car ex)))))
+        (else (countUnique (cdr ex) (countUnique (car ex) l #f)))))
+
+(define (contains? l i)
+  (if (empty? l) #f
+      (or (eq? (first l) i) (contains? (rest l) i))))
+
+(define (symbol<? s1 s2) (string<? (symbol->string s1) (symbol->string s2)))
+
+(provide simplify footprint)
