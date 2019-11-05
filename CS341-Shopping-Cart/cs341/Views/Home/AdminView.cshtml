@@ -1,0 +1,31 @@
+﻿@using cs341.Models
+@model cs341.Models.AdminViewModel
+<div id="admin-view" class="well">
+    <h1>Welcome Admin</h1>
+    <hr />
+    <h2>Users</h2>
+    <ul>
+        <li class="row"><div class="btn" onclick="dbRoute('/Users/Index')">Index <i class="fas fa-list"></i></div></li>
+        <li class="row"><div class="btn" onclick="dbRoute('/Users/Create')">Create <i class="fas fa-plus-square"></i></div></li>
+    </ul>
+    <h2>Items</h2>
+    <ul>
+        <li class="row"><div class="btn" onclick="dbRoute('/Items/Index')">Index <i class="fas fa-list"></i></div></li>
+        <li class="row"><div class="btn" onclick="dbRoute('/Items/Create')">Create <i class="fas fa-plus-square"></i></div></li>
+    </ul>
+    <h2>Categories</h2>
+    <ul>
+        <li class="row"><div class="btn" onclick="dbRoute('/Categories/Index')">Index <i class="fas fa-list"></i></div></li>
+        <li class="row"><div class="btn" onclick="dbRoute('/Categories/Create')">Create <i class="fas fa-plus-square"></i></div></li>
+    </ul>
+    <h2>Promotions</h2>
+    <ul>
+        <li class="row"><div class="btn" onclick="dbRoute('/Promotions/Index')">Index <i class="fas fa-list"></i></div></li>
+        <li class="row"><div class="btn" onclick="dbRoute('/Promotions/Create')">Create <i class="fas fa-plus-square"></i></div></li>
+    </ul>
+    <h2>CartEntries</h2>
+    <ul>
+        <li class="row"><div class="btn" onclick="dbRoute('/CartEntries/Index')">Index <i class="fas fa-list"></i></div></li>
+        <li class="row"><div class="btn" onclick="dbRoute('/CartEntries/Create')">Create <i class="fas fa-plus-square"></i></div></li>
+    </ul>
+</div>
